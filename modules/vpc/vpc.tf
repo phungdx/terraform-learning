@@ -82,7 +82,7 @@ resource "aws_subnet" "ccPrivateSubnet1" {
 resource "aws_subnet" "ccPrivateSubnet2" {
   vpc_id            = aws_vpc.ccVPC.id
   cidr_block        = var.private_subnet_cidrs[1]
-  availability_zone = var.availability_zones[0]
+  availability_zone = var.availability_zones[1]
   tags = {
     Name    = "ccPrivateSubnet2"
     Project = "CC TF Demo"

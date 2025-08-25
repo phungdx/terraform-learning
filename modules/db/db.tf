@@ -37,7 +37,7 @@ resource "aws_db_instance" "ccRDS" {
   storage_type           = "standard"
   engine                 = "postgres"
   engine_version         = "12"
-  instance_class         = "db.t2.micro"
+  instance_class         = "db.t3.micro"
   db_name                = var.db_name
   username               = var.db_user_name
   password               = var.db_user_password
